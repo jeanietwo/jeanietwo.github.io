@@ -16,9 +16,6 @@ h1{
     text-align: center;
 }
 
-h1:hover{
-    color: yellowgreen;
-}
 #menubar *{
     padding: 0px;
     margin: 0px;

@@ -27,16 +27,6 @@
     margin-right: auto;
 }
 
-a{
-    color: white;
-    text-decoration:none;
-}
-
-a:hover{
-    color: #FF0000;
-}
-
-
 h1{
     padding-top: 30px;
     font-size: 80px;
@@ -63,40 +53,23 @@ h1:hover{
 }
 
 #menubar > ul > li {
-    width: 25%;
-    height:30px;
-    line-height: 30px;
-    display: block;
-    text-decoration: none;
-    background-color: #00ccff;
-    color: white;
-	text: red; 
-    text-align: center;
+    
 }
 
 #menubar li{
-	width: 100%;
-    list-style: none;
-    float: left;
-    position: relative;
-	background-color: blue; 
-	color: black; 
+	
 }
 #menubar li:hover{
-    background-color: black;
-    color: black;
+    
 }
 
 #menubar ul ul {
-    position: absolute;
-    visibility: hidden;
+    
     
 }
 
 #menubar ul li:hover ul{
-    position: absolute;
-    visibility: visible;
-    width: 100%;
+    
 }
 
 .body{
@@ -115,11 +88,11 @@ h1:hover{
 
 h2{
     text-align: center;
-    color: white;
+    color: black;
 }
 
 p{
-    color: white;
+    color: black;
     padding-left: 40px;
     padding-right: 30px;
 }

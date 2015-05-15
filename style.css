@@ -1,36 +1,18 @@
 #outermostcontainer{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 .outercontainer{
-    background-color: #000066;
-    width: auto;
-    height: auto; 
-	padding-bottom: 50px; 
-	padding-top: 10px;  
-    color: white;
-    border-radius: 10px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    
 }
 
 #header{
-    border-radius: 10px;
-    background-image:url(images/project/BayArea.jpg);
-    background-size: 100% 100%;
-    height: 400px;
-    color:white;
-    padding-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 
 h1{
     padding-top: 30px;
     font-size: 80px;
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -45,7 +27,7 @@ h1:hover{
 #menubar
 {
     background-color: #35F6F4;
-    color: white;
+    color: orange;
     font-family: Century Gothic, sans-serif;
     margin-left: auto;
     margin-right: auto;
@@ -80,12 +62,6 @@ h1:hover{
 }
 
 
-.about > ul> img
-{
-    padding-left: 100px;
-    
-}
-
 h2{
     text-align: center;
     color: black;
@@ -95,9 +71,5 @@ p{
     color: black;
     padding-left: 40px;
     padding-right: 30px;
-}
-
-ul{
-    padding-left: 60px;
 }
 

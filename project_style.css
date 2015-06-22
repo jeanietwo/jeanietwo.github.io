@@ -13,18 +13,18 @@
 #header {
 	background-color: black;
 	width: 100%;
-	height: 70px;
+	height: auto;
 	left:0px;
 	top:0px;
 	text-align: center;
 	}
 
-#name{
+#name{/*using an image as the header for the page instead */
 	font-family: 'Great Vibes';
-	font-size: 32pt;
+	font-size: 45pt;
 	text-align: center;
 	width: 100%;
-	color:#672248;
+	color:#D00000;
 	line-height: 70px;
 }
 
@@ -43,7 +43,7 @@ hr {
 
 #menu {
 	display: block;
-	width: auto;
+	width: 100%;
 	height:30px;
 	margin: auto;
 	top:60px;
@@ -58,25 +58,25 @@ hr {
 	position: relative;
 	float: left;
 	list-style: none;
-	width: 118px;
-	/*118*/
+	width: 25%;
+	/*4 categories --> 25% for it to take up a whole line*/
 }
 
 #menu li a{
 	font-family: 'Noto Sans';
 	background-color: black;
 	color:white;
-	float: left;
+	float: center;
 	display: block;
 	text-decoration: none;
 	line-height: 30px;
 	text-align: center;
-	width: 118px;
-	/*118*/
+	width: auto;
+	/*background of the links should be spread across the whole bar*/
 }
 
 #menu li a:hover{
-	color: #87F1FF;
+    color: #CCCC33;
 	}
 	
 
@@ -99,14 +99,14 @@ hr {
 }
 
 #description {
-	text-align: right;
-	font-size: 28pt;
+	text-align: left;
+	font-size: 16pt;
 	font-family: 'Noto Sans';
-	color:white;
+	color:red;
 	float:left;
 	margin-left: 20px;
 	margin-right: 20px;
-	margin-top: 120px;
+	margin-top: 40px;
 }
 
 #contact_text {

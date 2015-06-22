@@ -28,6 +28,13 @@
 	line-height: 70px;
 }
 
+#socialmedia a img{
+    width: 25px;
+    height: auto;
+    float: left;
+    padding-top: 10px;
+}
+
 #bod {
 	margin-top: 200px;
 }

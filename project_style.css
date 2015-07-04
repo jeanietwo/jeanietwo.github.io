@@ -36,6 +36,14 @@
     padding-left: 10px; 
 }
 
+#socialmedia a img:hover{
+    width: 50px;
+    height: auto;
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
 #bod {
 	margin-top: 200px;
 }
@@ -112,8 +120,8 @@ hr {
 	font-family: 'Noto Sans';
 	color:red;
 	float:left;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
 	margin-top: 40px;
 }
 

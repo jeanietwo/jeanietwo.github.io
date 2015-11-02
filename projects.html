@@ -1,58 +1,127 @@
-<!DOCTYPE html> 
-<html> 
-<title> Jean's Projects </title> 
-<body> 
+<!DOCTYPE html><!--Home Page/Index-->
+<meta charset="UTF-8">
+<html>
 
-<div id="header">
-    <!--<h1><a href="index.html" class="plain_url" id="name">Jean Tu </a></h1>-->
+<!--<link href="style.css" rel="stylesheet" type="text/css">-->
+<style>
+header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;   
+    height: 200px;  
+}
+nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding-left:30px; 
+    padding-right: 10px;
+    padding-top: 10px; 
+    padding-bottom: 10px;         
+}
+nav a:hover{
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+section {
+    width:60%;
+    float:left;
+    padding:10px; 
+    padding-left: 20px;       
+}
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;         
+}
+aside {
+    float: left; 
+    width: 20%; 
+    height: auto; 
+    padding: 10px;
+    background-color: beige; 
+}
+aside #socialmedia img {
+    width: 20px; 
+    padding-right: 5px;
+}
+</style>
+<head>
+    <header>
+        <img src="images/Jean.jpg" style="float: right;
+            margin-right: 100px;
+            margin-top: 30px;
+            border: white 5px double;
+            width: 150px;
+            height: auto; "> <!--profile image-->
+        <a href="http://jeanietwo.github.io/index.html" class="plain_url" id="name"> <img src="images/JeanLogo.png" 
+            style="float: center; 
+            width: 300px; 
+            height: auto;"> </a>
+       
+    </header>
+
+
+</head>
+
+<body>
+
+
+
+<nav>
+    <a href="http://jeanietwo.github.io/index.html"> About </a><br>
+    <a href="http://jeanietwo.github.io/JeanTu_Resume.pdf"> Resume </a> <br>
+    <a href="http://jeanietwo.github.io/projects.html">Projects </a><br>
+    <a href="http://jeanietwo.github.io/contact.html">Contact </a><br>
+    <!-- Social Media Links --> 
+    
+</nav>
+
+<section>
+<h1 style="text-align:center">Projects</h1>
+
+    <p>I am currently working on a Hangman Project as a side project, however I keep on getting side tracked with assignments and other school activities. But I will get it done. </p> 
+
+    <p> Currently in my CS 104: Data Structures course we are learning how to build a search engine that is similar to that of Google's. For the project we are implementing pagerank to be able to get better reults that the user might be more interested in. </p>
+    
+</p>
+</section>
+
+<aside> 
     <div id="socialmedia">
         <!--LinkedIn account-->
         <a href="https://www.linkedin.com/in/jeantu/" target="_blank">
-            <img src="SocialMedia/LinkedIn.png"> </a>
+            <img src="SocialMedia/LinkedIn.png">LinkedIn</a><br/><br/>
         <!--Facebook account-->
         <a href="https://www.facebook.com/jean.tu.58" target="_blank">
-            <img src="SocialMedia/facebook.png"> </a>
+            <img src="SocialMedia/facebook.png">Facebook</a><br/><br/>
         <!--Twitter account-->
         <a href="https://twitter.com/jeantuJT" target="_blank">
-            <img src="SocialMedia/twitter.png"> </a>
+            <img src="SocialMedia/twitter.png">Twitter </a><br/><br/>
         <!--Instagram account-->
         <a href="https://instagram.com/jeanietwo/" target="_blank">
-            <img src="SocialMedia/instagram.png"> </a>
+            <img src="SocialMedia/instagram.png">Instagram </a><br/><br/>
         <!--Google+ account-->
-        <a href="https://plus.google.com/u/0/109844891514860907233/posts">
-            <img src="SocialMedia/Google.png"></a>
+        <a href="https://plus.google.com/u/0/109844891514860907233/posts" target="_blank">
+            <img src="SocialMedia/Google.png">Google+</a><br/><br/>
         <!--Flickr account-->
         <a href="https://www.flickr.com/photos/99671348@N04/" target="_blank">
-            <img src="SocialMedia/flikr.png"> </a>
+            <img src="SocialMedia/flikr.png"> Flickr</a><br/><br/>
         
-    </div> <!--end of the socialmedia div-->
-    
-    <a href="index.html" class="plain_url" id="name"> <img src="JeanLogo.png" style="float: center; width: auto; height: auto;"> </a>
-    <img src="images/Jean.jpg"
-        style="float: right;
-        margin-right: 100px;
-        margin-top: 30px;
-        border: white 5px double;
-        width: 200px;
-        height: auto; "> <!--profile image-->
-</div> <!--end of header-->
+    </div> <!--end -->
 
-<link rel="stylesheet" type="text/css" href="project_style.css">
-    <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Great+Vibes' rel='stylesheet' type='text/css'>
-        <style>
-            </style>
-        <div id="menu">
-            <ul>
-                <li><a href="index.html"> Home </li>
-                <li><a href="JeanTu_Resume.pdf"> Resume </a>  </li>
-                <li><a href="projects.html"> Projects </a> </li>
-                <!--<li><a href="education.html"> Education </a></li>-->
-                <li><a href="contact.html"> Contact </a> </li> 
-            </ul>
-        </div> <!--end of the menu div-->
+</aside> 
 
-    <p style="text-align:center;"> This is still a work in progress page </p> 
+<footer> 
+Copyright © Jean Tu 
+</footer>
 
-
-
-</body> 
+</body>
+</html>

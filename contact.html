@@ -60,6 +60,9 @@ form{
     background-color: grey;
     padding: 20px; 
 }
+form input {
+    margin-left: 20px;
+}
 </style>
 <head>
     <header>
@@ -97,15 +100,15 @@ form{
 
     <p>If you would like to contact me, please fill out the form below: </p>
 
-    <form> 
+    <form action="jeantuviterbi@gmail.com"> 
         First Name: <br/>
-        <input type="text" name="firstname"><br/><br/>
+        <div id="box"><input type="text" name="firstname"><br/><br/></div>
         Last Name: <br/>
-        <input type="text" name="lastname"><br/><br/>
+        <div id="box"><input type="text" name="lastname"><br/><br/></div>
         Email: <br/>
-        <input type="email" name="email"> </br><br/>
+        <div id="box"><input type="email" name="email"> </br><br/></div>
         Questions/Comments: <br/>
-        <input type="text" cols="40" rows="10" style="width: 200px; height: 100px;"> <br/><br/>
+        <div id="box"><input type="text" style="width: 200px; height: 100px;"> <br/><br/></div>
         <input type="submit" value="Submit"><!--submit button-->
     </form> 
 </section>

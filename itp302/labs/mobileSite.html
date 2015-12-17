@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mobile Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="themes/custom.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+    /*
+    </body>
+    </html>
+    */
+</script>
+<style> 
+img {
+	width: 200px; 	
+}
+
+</style>
+<div data-role="page" id="home"  data-theme="a">
+	<div data-role="header">
+    	 <img src="../images/mobile/techcrunchLogo.png">
+		<h1>Tech Crunch</h1> 
+        <p style="padding: 20px; background-color: white; margin: 20px; color: green;">
+         Get the latest news about Tech, Business and some other interesting things right here on Tech Crunch!!! For more information on some of the stories visit TechCrunch.com at <a href="http://techcrunch.com"> http://techcrunch.com </a> </p>
+        </p>
+	</div><!-- close header -->
+    <div role="main" class="ui-content"><!-- main-->
+        <ul data-role="listview">
+			<li><a href="#page2" data-transition="slidefade" >News</a></li>
+            <li><a href="#page3" data-role="button">Videos</a></li>
+			<li><a href="#page4" data-transition="flow">Events</a></li>
+		</ul>		
+	</div><!-- close main -->
+    
+    <div data-role="footer" data-position="fixed">
+		<div data-role="controlgroup" data-type="horizontal">
+				<a href="#home" data-role="button" data-icon="home">Home Page</a>
+                <a href="#page2" data-role="button" data-icon="alert">News</a>
+                <a href="#page3" data-role="button" data-icon="camera">Videos</a>
+                <a href="#page4" data-role="button" data-icon="calendar">Events</a>
+    </div>
+        </div><!-- close footer -->
+    </div>
+</div><!--end of page--> 
+
+
+<div data-role="page" id="page2" data-theme="b">
+	<div data-role="header">
+		<h1>News</h1>
+	</div><!-- close header -->
+    <div role="main" class="ui-content">
+		<p style="padding: 20px; margin: 20px; background-color: white; color: purple;">
+       		Check out their latest story: 
+            <br><br>
+            <span style="padding: 20px; margin: 20px; "> 
+            	Dear PR industry,
+            <br><br>
+            Please do more of this. I know we have been at odds in the past but today you have redeemed yourself, fully and entirely, for eternity or at least the next couple of weeks.
+            <br><br>
+            Mitch Delaplane, you are a god among PR professionals. You and your 483 words of pure awesomeness had me at “The title alone grabs you and demands that it be read.  Then there’s this quote that completely takes things to an entirely new level.” Indeed.
+            <br><br>
+            Best, <br><br>
+            Alexia
+            </span>
+        </p>
+        <hr>
+        
+        <p style="padding: 20px; margin: 20px; background-color: skyblue; "> The story above was taken from their website, you can read the whole thing <a href="http://techcrunch.com/2011/01/12/news-about-news/"> http://techcrunch.com/ </a> </p>
+        		
+	</div><!-- close main -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="controlgroup" data-type="horizontal">
+				<a href="#home" data-role="button" data-icon="home">Home Page</a>
+                <a href="#page2" data-role="button" data-icon="alert">News</a>
+                <a href="#page3" data-role="button" data-icon="camera">Videos</a>
+                <a href="#page4" data-role="button" data-icon="calendar">Events</a>
+</div>
+	</div><!-- close footer -->
+</div>
+
+<div data-role="page" id="page3" data-theme="c">
+	<div data-role="header">
+		<h1>Videos</h1>
+	</div><!-- close header -->
+    <div role="main" class="ui-content">
+		<p style="padding: 20px; margin: 20px; background-color: white;">
+        	If you would like to view some of the videos posted on TechCrunch visit: <a href="http://techcrunch.com/videos"> http://techcrunch.com/videos </a>
+        </p>
+        <hr>		
+        
+        <p> Check out some of our videos here: </p>
+        <img src="../images/mobile/video.png" style="width: 450px;" > 
+	</div><!-- close main -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="controlgroup" data-type="horizontal">
+				<a href="#home" data-role="button" data-icon="home">Home Page</a>
+                <a href="#page2" data-role="button" data-icon="alert">News</a>
+                <a href="#page3" data-role="button" data-icon="camera">Videos</a>
+                <a href="#page4" data-role="button" data-icon="calendar">Events</a></div>
+	</div><!-- close footer -->
+</div>
+
+<div data-role="page" id="page4" data-theme="d">
+	<div data-role="header">
+		<h1>Events</h1>
+	</div><!-- close header -->
+    <div role="main" class="ui-content">
+		<p style="padding: 20px; margin: 20px; background-color: white; color: black;  ">
+        	To keep updated with all of the events that TechCrunch is following visit their page here: <a href="http://techcrunch.com/events/"> http://techcrunch.com/events/ </a> <br>They are mainly known for their Disrupt events, where they introduce to us the latest and greatest of startups, gadgets, and tech. 
+        </p>
+        <hr>	
+        <p> Some of the events that they have upcoming on their page are: 
+        <br><br>
+        <img src="../images/mobile/event.png" style="width: 450px;"> 
+        
+        	
+	</div><!-- close main -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="controlgroup" data-type="horizontal">
+				<a href="#home" data-role="button" data-icon="home">Home Page</a>
+                <a href="#page2" data-role="button" data-icon="alert">News</a>
+                <a href="#page3" data-role="button" data-icon="camera">Videos</a>
+                <a href="#page4" data-role="button" data-icon="calendar">Events</a>
+</div>
+	</div><!-- close footer -->
+</div>
+
+</html>
+<!DOCTYPE html>
+<html>

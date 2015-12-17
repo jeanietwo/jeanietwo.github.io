@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	   	<script>
+        /*
+        </body>
+        </html>
+        */
+        </script>
+<meta charset="utf-8" />
+<title>Assignment #1</title>
+<style>
+body {
+	font-family: "Avenir";
+	background-color:#00CED1;
+}
+
+#outercontainer {
+	width:800px; 
+	margin: auto;
+	}
+
+header{
+	padding-top: 40px;
+	height: 90px;
+	background-color:white;
+	color: grey;
+	font-size: 2.2em;
+	font-weight:bold;
+	
+	text-align: center;
+}
+span {
+	font-size: .5em; 
+	color:black;
+}
+figure{
+	margin: 0 auto;
+	padding-top: 10px;
+	background-color: #6495ED;
+}
+figcaption{
+	font: .4em;
+	color: white;
+}
+section {
+	background-color: lightblue;	
+	padding: 5px 12px;
+}
+
+footer {
+	text-align: center;	
+	background-color:blue;
+	color: white;
+	padding: 8px;
+	font-size: .8em;
+}
+
+label {
+	width:200px;
+	float:left;	
+	clear:both;
+	text-align:center;
+	padding-right: 20px;
+}
+input{
+	padding-left: 0px;
+}
+input[type='submit'] {
+	border-radius: 10px;
+	width: 120px;
+	text-align:center;
+	background-color: blue;
+	color: white;	
+	font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<div id="outercontainer">
+
+<header>Meet the Robinsons Film Review <br/>
+	<em>
+		<span> created by Jean Tu </span> 
+	</em>
+</header>
+    <center> <figure> 
+        <img src="../images/MeetTheRobinsons.jpg" alt="Meet The Robinsons image" style="width: 500px; height: auto;" > 
+        <figcaption> The image cover for the Meet The Robinsons film </figcaption> 
+    </figure> </center>
+<section>
+
+<form id="f1" name="f1" method="post" action="http://webdev.usc.edu/itp302/formresults.cfm">
+
+<p><strong>Basic contact info:</strong></p>
+
+  <p>
+  	<label for="firstName">First Name:</label>
+  	<input type="text" name="firstName"  id="firstName"  required='1' title="First name" placeholder="Jane"autofocus='1'/>
+  </p>
+    <p>
+    	<label for="lastName">Last Name:</label>
+    	<input type="text" name="lastName"  id="lastName"  required='1' title="Last name" placeholder="Doe"/>
+    </p>
+  <p>
+  	<label for="age">Age:</label>
+  	<input type="number" name="age" id="age"  min="10" max="100" value="" required='1' title="Please enter your age." />
+  	</p>
+  <p>
+  	<label for="phone">Phone:</label>
+  	<input type="tel" name="phone" id="phone"  pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Please enter a telephone number" placeholder="Ex: (123)123-1234" />
+  </p>
+  <p>
+  	<label for="email">Email:</label>
+  	<input type="email" name="email" id="email" required='1' title="Please enter email address" placeholder="sample@domain.com"  />
+  </p>
+	<p>
+		<label for="watched">Have you watched the movie before?</label>
+		<input type="text" name="watched" id="watched"  required='1' title='Have you watched the movie before?' list="selection"/> 
+		 <datalist id="selection">
+		 	<option value="Yes, MANY TIMES" />
+			<option value="Yes" />
+			<option value="No" />
+			<option value="What is this movie? " />
+		</datalist>
+	</p>
+
+<br />
+
+<p><em><strong>Questions:</strong></em></p>
+
+
+	<p><label>&nbsp;<br />&nbsp;</label>
+		Do you remember hearing the phrase: <span style="color: red;">"Keep Moving Forward"</span> while watching? <br /> 
+    <span style="padding-left: 220px;"> <input type="radio" name="keepMovingForward" value="yes">Yes 
+    <input type="radio" name="keepMovingForward" value="no">No </span>
+	</p>
+    
+  <p>
+  	<label for="rating">&nbsp;<br />&nbsp;</label>
+  	How much did you like the movie? (0 = didn't like it - 100 = liked it alot) <br />
+  	<input type="range" name="rating"   id="rating" value="" min="0" max="100" step="1" onchange="slidedata.value=this.value"/>
+  	<output name="slidedata"></output>
+  </p>
+
+	<p>
+		<label for="watchedDate">&nbsp;<br /> <br />&nbsp;</label>
+		When was the last time  you watched Meet the Robinsons?<br /> 
+		<input type="date" name="watchedDate" id="watchedDate" />
+	</p>
+
+  	<p>
+		<label for="watchAgain">&nbsp;<br /> <br />&nbsp;</label>Would you like to watch the film again?<br/>
+		<input type="text" name="watchAgain" id="watchAgain"  required='1' title='Watch again?' list="selection2"/> 
+		 <datalist id="selection2">
+		 	<option value="OF COURSE" />
+			<option value="Maybe, if it's on already" />
+			<option value="Sure." />
+			<option value="Nope. " />
+		</datalist>
+	</p>
+
+<p>&nbsp;</p>
+
+<p>
+	<label for="submitbutton">&nbsp;</label><input type="submit" name="submitbutton" value="Submit survey"/>
+</p>
+</form>
+
+</section>
+-----------------------------------------------------------<span style="font-size: 2em; color: purple;"> Part II </span>----------------------------------------------------------------
+<section> <!--film Browser Support information--> 
+<p><em><strong> Browser Support Information </strong></em></p>
+
+<p> 
+	From what I was able to test from the different browsers, tt seems like from what I have tested on my Mac and on a PC is that everything but the date is able to work, but this depends on which browser the user is on. In class on Thursday I noticed that I was not able to get the date input to work, my just looked like an input text box, rather than the mm/dd/yyyy. <br/>
+</p>
+<p> 
+	I tried it on the two browsers that I had (Firefox and Safari) and the two did not work, but I decided to download Chrome since the assignment said to test it on at least THREE browsers. The date input was able to show up on Chrome. When I tried my site on the PC, it was on the Firefox browser. There was not much of a difference between the PC and the Mac because the browsers I viewed them on were the same. <br/>
+</p>
+<p> 
+	I checked the version of Firefox on my computer and it says that it is up to date, which I guess means that my form is really only compatible on Chrome, on both the PC and Mac. <br/>
+</p>
+
+</section> 
+
+<footer>Jean's Survey for Meet The Robinsons's Film.</footer>
+
+</div>
+</body>
+</html>

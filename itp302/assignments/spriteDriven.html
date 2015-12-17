@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Sprite Driven Page</title>
+</head>
+<script>
+    /*
+    </body>
+    </html>
+    */
+</script>
+<style> 
+html{
+	background-color: #909090 ;
+	width: 1000px; 
+	height: 800px;
+	margin: 0 auto;
+}
+header{
+	background-color: white; 
+	height: 120px;
+}
+header img{
+	width: 350px;
+}
+#rightUpButtons{
+	width: 400px;
+	float: right;
+	padding-right: 10px; 
+}
+.sociallinks li{
+	background-image: url('../images/assignment_3Sprite/upRightButtons.jpg');
+	background-repeat: no-repeat;
+	position: relative; 
+	float: right; 
+	list-style: none;
+}
+.sociallinks li a{
+	width: 55px; height: 55px; 
+	display: block;
+	text-decoration: none; 
+}
+.give{
+	width: 55px; height: 55px; 
+	background-position: 0px 0px; 
+}
+.give:hover{
+	background-position: 0px -60px; 
+}
+.sociallinks .fundraise{
+	width: 100px; height: 55px; 
+	background-position: -110px 0px;
+}
+.sociallinks .fundraise:hover{
+	background-position: -110px -60px;
+}
+.shop{
+	width: 55px; height: 55px; 
+	background-position: -55px 0px;
+}
+.shop:hover{
+	background-position: -55px -60px;
+}
+.sociallinks .grants{
+	width: 75px; height: 55px;
+	background-position: -220px -0px;
+}
+.grants:hover{
+	background-position: -220px -60px;
+}
+
+#menu{
+	width: 1000px;
+	float: left; 
+	margin: 0 auto;
+	padding: 0px; 
+}
+
+.menu_options li {
+	background-image: url('../images/assignment_3Sprite/ISFMenu.jpg');
+	background-repeat: none; 
+	position: relative; 
+	float: left; 
+	list-style: none;
+}
+.menu_options li a {
+	width: 100px; height: 40px; 
+	display: block;
+}
+#menu .environment {
+	width:155px; 
+}
+#menu .creatures {
+	width:130px; 
+}
+#menu .educators {
+	width:120px; 
+}
+/*#menu .youth {
+	width: 100px;
+}*/
+
+#menu .getinvolved {
+	width:155px; 
+}
+.menu_options{
+	margin: 0px; 
+	padding: 0px; 
+}
+.home{
+
+}
+.home:hover{
+	background-position: 0px -40px;
+}
+.about {
+	background-position: -100px 0px; 
+}
+.about:hover{
+	background-position: -100px -40px; 
+}
+.environment {
+	background-position: -200px 0px; 
+}
+.environment:hover{
+	background-position: -200px -40px; 
+}
+.creatures{
+	background-position: -360px 0px;
+}
+.creatures:hover{
+	background-position: -360px -40px; 
+}
+.educators {
+	background-position: -500px 0px;
+}
+.educators:hover {
+	background-position: -500px -40px; 
+}
+.youth {
+	background-position: -625px 0px; 
+}
+.youth:hover{
+	background-position: -625px -40px; 
+}
+.college {
+	background-position: -735px 0px;
+}
+.college:hover {
+	background-position: -735px -40px; 
+}
+.getinvolved {
+	background-position: -840px 0px; 
+}
+.getinvolved:hover{
+	background-position: -840px -40px; 
+}
+
+
+body{
+	
+}
+#middle img{
+	width: 1000px; 
+	margin: 0 auto; 
+}
+#searchBar img {
+	width: 1000px;
+	margin: 0 auto; 
+}
+#bottom img{
+	width: 1000px;
+	margin:0 auto; 
+}
+footer{
+
+}
+
+</style> 
+<header> 
+	<img src="../images/assignment_3Sprite/ISFLogo.png" alt="ISF Logo" style="float: left;">
+	<div id="rightUpButtons"> 
+		<ul class="sociallinks">
+			<li class="grants">
+				<a href="http://www.isfoundation.com/grants"> </a> 
+				</li>
+			<li class="fundraise">
+				<a href="https://www.crowdrise.com/ISFoundation"> </a>
+				</li>
+			<li class="shop">
+				<a href="http://www.tvpmarket.com/collections/ian-somerhalder-foundation"</a>
+				</li>
+			<li class="give">
+				<a href="http://www.isfoundation.com/give"></a>
+				</li>
+			
+			
+		</ul>
+	</div> <!--end of rightUpButtons--> 
+</header> 
+<div id="menu"> 
+		<ul class="menu_options">
+			<li class="home">
+				<a href="http://www.isfoundation.com/welcome">
+				</a>
+			</li>
+			<li class="about">
+				<a href="http://www.isfoundation.com/about-foundation">
+				</a>
+			</li>
+			<li class="environment">
+				<a href="http://www.isfoundation.com/environment">
+				</a>
+			</li>
+			<li class="creatures">
+				<a href="http://www.isfoundation.com/creatures">
+				</a>
+			</li>	
+			<li class="educators">
+				<a href="http://www.isfoundation.com/educators">
+				</a>
+			</li>	
+			<li class="youth">
+				<a href="http://www.isfoundation.com/youth">
+				</a>
+			</li>	
+			<li class="college">
+				<a href="http://www.isfoundation.com/college">
+				</a>
+			</li>	
+			<li class="getinvolved">
+				<a href="http://www.isfoundation.com/get-involved">
+				</a>
+			</li>	
+		</ul>
+</div> <!--menu--> 
+<div id="middle"> 
+	<img src="../images/assignment_3Sprite/middleSection.png" alt="middle section of ISF page"> 
+</div> <!--end of "Middle"-->
+<div id="searchBar"> 
+	<img src="../images/assignment_3Sprite/searchBar.png" alt="searchbar in between the middle and the bottom"> 
+</div><!--end of "searchBar"--> 
+<div id="bottom"> 
+	<img src="../images/assignment_3Sprite/bottom.png" alot="bottom section of the ISF page"> 
+</div> <!--end of bottom-->
+<body>
+        
+</body>
+
+<footer> 
+
+</footer> 
+</html>

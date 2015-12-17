@@ -1,0 +1,90 @@
+<html> 
+<head>
+    <script>
+    /*
+    </body>
+    </html>
+    */
+    </script>
+    <title> Portfolio Survey</title>
+    <style>
+        #outercontainer {
+            width: 900px;
+            padding: 20px;
+            margin: auto;
+            border-radius: 24px;
+            background-color: #FDD7E4;
+        }
+    figure{
+        margin-left: 200px;
+    }
+    figure:hover{
+        background-color: blue;
+        color: white;
+    }
+    .label{
+        text-align: right;
+        padding-right: 5px;
+        width: 250px;
+        float: left;
+        clear:both;
+    }
+    
+    .small{
+        width: 35px;
+    }
+        
+    </style>
+    </head>
+    <body>
+        
+<div id="outercontainer">
+     <hr>
+    <h1>Answer the following questions about the previous page: </h1>
+    <figure> 
+        <img src="../images/web_exp.jpg" alt="web experience page" style="width: 500px; height: auto;"> 
+        <figcaption> This is just a snippit of my page incase you forgot what it looked like </figcaption> 
+    </figure> 
+   
+    
+    <br><br><br>
+    <form METHOD="POST" ACTION="http://www.usc.edu/cgi-bin/mail_form/jeantu@usc.edu">
+     <hr>    
+    <div class="label"> Name:</div> <input type="text" name="fullname"><br>
+    <div class="label"> Email: </div> <input type="text" name="email"><br>
+    
+    
+    <br>
+    <div class="label"> Did you like my page? </div>
+        <input type="radio" name="likespage" value="y">Yes
+        <input type="radio" name="likespage" value="n">No
+        <input type="radio" name="likespage" value="m" checked='1'>Maybe
+    <br><br>
+
+    <div class="label"> Did you like the color scheme? </div>
+        <input type="radio" name="likesColor" value="y" checked='1'>Yes
+        <input type="radio" name="likesColor" value="n">No   
+        <br><br>
+
+    <div class="label"> Was it easy to navigate? </div>
+        <input type="checkbox" name="navigate"> Yes
+        <input type="checkbox"name="couldBeImproved"> Could be improved
+               
+    <br><br>
+    <div class="label"> Tell me what you liked/didn't like about the page:  </div>
+        <textarea name="comments" style="width: 400px; height:200px; background-color: white; "class="largebox"> </textarea>
+        
+    <br><br>
+    <input type="submit" value="Submit quiz">
+    <input type="reset" value="Start Over">
+
+            
+    
+    
+    </form>
+    
+    </div> <!-- end of outercontainer ->
+        
+    </body>
+    
+</html> 

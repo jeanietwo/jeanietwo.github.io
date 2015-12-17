@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Journal site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- No resolution emulation, no initial zoom -->
+<link href="css/main.css" rel="stylesheet" type="text/css"> <!-- note: for this project all css files are in a /css/ directory -->
+<link href="css/device_medium.css" rel="stylesheet" type="text/css">
+<link href="css/device_small.css" rel="stylesheet" type="text/css">
+<style>
+/* temporary css to fill out layout */
+body {
+	background-color: red;
+}
+
+#page {
+	background-color: yellow;
+	margin: auto;
+	max-width: 960px;	
+	min-width: 760px;
+}
+
+header {
+	height: 300px;
+	background-color: teal;
+}
+
+nav {
+	min-height: 30px;
+	background-color: steelblue;	
+}
+#content {
+	background-color: lightsteelblue;
+	min-height: 600px;
+}
+
+#welcome {
+	min-height: 100px;
+	background-color: blanchedalmond;	
+}
+
+#teases {
+	background-color: burlywood;	
+}
+
+.tease {
+	width: 33%;
+	min-height: 280px;
+	background-color: chocolate;	
+	float:left;
+}
+
+footer {
+	width: 100%;	
+	min-height: 30px;
+	background-color: pink;
+	clear:all;
+}
+</style>
+</head>
+<body>
+<div id="page">
+	<header></header>
+    <nav></nav>
+	<div id="content">
+    	<div id="welcome"></div><!-- end of welcome -->
+        <div id="teases">
+        	<div class="tease"></div>
+        	<div class="tease"></div>
+        	<div class="tease"></div>
+        </div><!-- end of teases -->
+    </div><!-- end of content -->
+    <footer></footer>
+</div><!-- end of page -->
+</body>
+</html>

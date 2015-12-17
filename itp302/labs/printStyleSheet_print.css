@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+	background-color: rgba(0, 255, 0, 0.3); 
+}	
+header{
+	font-family: GFSNeohellenicBold;
+	font-size: 3em;
+	text-align:center; 
+	background-color: rgba(45,45,45, 1);
+	color: blue;
+	padding: 30px;
+	width: 800px; 
+	height: auto;
+	position: relative;
+	margin: 10px;
+}	
+header p {
+	font-size: .4em;
+	text-align: center; 
+}
+#screen {
+	display: none; 
+}
+
+body{
+	position: relative;
+	font-family: HankenBook;
+	font-size: 1em;
+	margin: 0 auto;
+	width: auto; 
+	padding: 50px;
+
+}
+aside {
+    height: 500px;
+    position: relative;
+    opacity: 0.2;
+    top: 0px;
+}
+aside img{
+	width: 90px; 
+	height: 90px; 
+}
+aside img:hover{
+	transition: 1 2s, linear 3s; 
+}
+
+#meat{
+	position: relative; 
+	columns: 2;
+	-webkit-columns: 2; 
+	-moz-columns: 2; 
+}
+
+figure{
+	display: none;
+}
+figure img {
+	display: none; 
+}
+figcaption{
+	font-size: 1em; 
+}
+#compatibilityHeader{
+	background-color: rgba(0, 0, 255, 0.3);
+	color: #800000;
+	padding: 20px;
+	text-align: center;
+	font-size: 2em; 
+	font-family: GFSNeohellenicBold;
+}
+
+#compatibility{
+	background-color:rgba(0, 0, 255, 0.5) ;
+	color: purple;
+	padding: 20px;
+}
+

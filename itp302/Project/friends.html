@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Make Friends</title>
+
+<script>
+    /*
+    </body>
+    </html>
+    */
+</script>
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gfs-philostratos" type="text/css"/> <!--for the header-->
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/railway-sans" type="text/css"/> <!--for the question--> 
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/grundschrift" type="text/css"/> <!--for the steps-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous"><!--loading in bootstrap--> 
+ <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/tibet" type="text/css"/> 
+<link rel="stylesheet" type="text/css" href="friends.css">
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+
+$(document).ready(function(){
+	$("#slide1").trigger("play");
+	$(".noClicked, .yesClicked, .step1, .step2, .step3, .step4, .step5, .deoderant, .gum, .end, #fightsong").hide(); 
+	//$(".button3, .button4, .button5, .button6, .button7").hide();  
+	$("#noButton").click(function(){
+		$("#slide1").trigger("pause");
+		$("#lonely").trigger("play"); 
+		$("#friendsimage").hide();
+		$("#question").hide();
+		$(".noClicked").show(2000); 
+		$(".buttons #noButton").hide();
+		
+	}); 
+	$("#yesButton").click(function(){
+		$("#slide1").trigger("pause");
+		$("#lonely").trigger("pause"); 
+		$("#friendsAudio").trigger("play");  
+		$(".noClicked").hide();
+		$("#friendsimage").hide();
+		$("#question").hide();
+		$(".buttons").hide();
+		$(".yesClicked").show(2000); 
+	});
+	$("#goButton").click(function(){
+		$("#friendsAudio").trigger("pause"); 
+		$(".step1").show(); 
+		$(".yesClicked").hide(2000);
+		$("#slide3").trigger("play");
+	
+	});
+	
+	$(".button2").click(function(){ //confident
+		$("#slide3").trigger("pause");
+		$("#smells").trigger("play");
+		$(".step1").hide(1200);
+		$(".step2").show(3000).delay(15000).queue(function() {
+			$(".deoderant").show();
+			$(".gum").show();  
+		}); 
+	});
+	$(".button3").click(function(){
+		$("#smells").trigger("pause");
+		$("#seek").trigger("play");
+		$(".step2").hide();
+		$(".deoderant").hide();
+		$(".gum").hide(); 
+		$(".step3").show(3000).delay(12000).queue(function() {
+			$(".gum").hide(); 
+			$(".deoderant").hide();
+		});
+	});
+	$(".button4").click(function(){
+		$("#seek").trigger("pause");
+		$("#topics").trigger("play");
+		$(".step3").hide();
+		$(".step4").show(3000);
+	});
+	$(".button5").click(function(){
+		$("#topics").trigger("pause");
+		$("#justdoit").trigger("play");
+		$(".step4").hide();
+		$(".step5").show(3000); 
+	});
+	$(".button6").click(function(){
+		$("#justdoit").trigger("pause");
+		$("#fightsong").show(); 
+		$("#congrats").trigger("play").delay(23000).queue(function() {
+			$("#fightsong").trigger("play");
+		});
+		$(".step5").hide();
+		$(".end").show(3000);
+	});
+
+});
+</script>
+</head>
+<body>
+<center>
+<div id="outercontainer">
+<header> 
+	<span style="background-color: white; padding: 5px; ">How to Make Friends!! </span><br> 
+</header>
+
+<ul class="nav nav-pills"><!--start of navigation bar-->
+  <li role="presentation" class="active"><a href="friends.html"><span class="glyphicon glyphicon-home"></span> Home
+				</a></li>
+  <li role="presentation" class="pill"><a href="about.html" target="_blank">
+                About 
+				</a></li>
+  <li role="presentation" class="pill"><a href="confidence.html" target="_blank">
+                How to Boost Confidence
+				</a></li>
+  <li role="presentation" class="pill"><a href="pikachoose-96/examples/bottom/topics.html" target="_blank">
+                Topics
+				</a></li>
+</ul><!--end of navitation bar-->
+
+
+<div id="content">
+	<center>
+    <img src="images/friends.jpg" alt="people holding hands" id="friendsimage">
+    </center>
+  
+    
+    <center>
+        <div id="question">
+          <p> Would you like to learn how to make friends?? </p>
+        </div><!--end of question-->
+    </center>
+    <center>
+    	<div class="buttons">
+            <button type="button" id="yesButton">Yes</button> 
+            <button type="button" id="noButton">No</button> 
+        </div><!--end of the buttons div-->
+    </center>
+    
+
+    
+
+    <br><br>
+    
+    <div class="noClicked"> 
+    	<img src="images/upPointer.jpg" alt="tennis player pointing up">
+    	<br><br><hr><br>
+    	<img src="images/sassyHand.gif" alt="Talk to the hand"> 
+        <h2 style="color: white; background-color: red; padding: 10px;"> 
+        	Fine. Don't make friends <br> 
+        	<strong> BE LONELY -- Akon </strong>
+        </h2>
+        <h3 style="color: white; background-color: orange; padding: 10px; "> I'm giving you one more chance to click, "YES" above. </h3>   
+    </div><!--end of noClicked--> 
+    
+    <div class="yesClicked"> 
+    	YAY! Let's get Started. 
+        <p><h2> Click on "GO" to get started </h2> </p>
+        <img src="images/regularGo.png" alt="go button" id="goButton"> <br><br>
+        <strong><p> As Miley Cyrus would say, "You're a true friend!" </p></strong>
+    </div><!--end of yesClicked--> 
+        
+    <div class="step1" id="slide" style="clear:both;"> 
+    	<h1><u>Step 1 </u></h1>
+        <h2> Build up the <strong> CONFIDENCE </strong> </h2>
+        <img src="images/confidence.jpg" alt="little boy confident"> 
+        <br> 
+        <p> If you would like to learn more about how to build confidence, check out the link above listed as "How to Boost Confidence"</p>
+        <br>
+        <p> </p>
+        <img src="images/button2.png" class="button2" alt="button2">
+    </div><!--end of step1-->
+    
+    <div class="step2" id="slide"> 
+    	<h1><u> Step 2 </u></h1>
+    	<h2> Check "THE SMELLS" </h2>    
+        <img src="images/badBreath.png" alt="badBreath">
+        <br><br>
+        <img src="images/button3.png" class="button3" alt="button3">
+    </div><!--end of step2-->
+    
+    
+    <div class="step3" id="slide"> 
+    	<h1><u> Step 3 </u></h1>
+        <h2>Seek your "New Friend"</h2>
+        <p> Search for the stranger that you would like to be your new friend </p><br> <br> 
+        <img src="images/seek.gif" alt="one direction looking"> 
+        <br><br>
+        <img src="images/button4.png" class="button4" alt="button4">
+    </div><!--end of step3--> 
+    
+    <div class="step4" id="slide"> 
+    	<h1><u>  Step 4 </u></h1>
+        <h2> Topics </h2>
+        <img src="images/interests.jpg" alt="interests"> 
+        
+        <p> Be sure to have things in common, so that there is something that you can always fall back on. If you just want to know about random things to talk about, click on the <strong>Topics</strong> tab in the navigation bar above to view a gallery of websites that you can read articles to stay up to date. </p>
+        <img src="images/lightBulb.png" alt="lightbulb"> 
+        <br><br>
+        <img src="images/button5.png" class="button5" alt="button5">
+    </div><!--end of step4-->
+    
+    <div class="step5" id="slide"> 
+    	<h1><u>  Step 5 </u></h1>
+        <h2> Just Do IT </h2>
+        <p> Do as Shia Labeouf would do, make your dreams come true and <strong> just do it!! </strong></p>
+        <img src="images/justDoIt.gif" alt="shia labouf">
+        <p> Here are some recaps before you try and do it on your own: " </p>
+        <br><br>
+        <h2>
+            <ul> 
+                <li> Be Confident</li>
+                <li> Check "The Smells" </li>
+                <li> Seek </li>
+                <li> Prepare </li>
+                <li> Execute </li>
+            </ul>
+        </h2>
+        <img src="images/button6.png" class="button6" alt="button6">
+    </div><!--end of step5-->
+    
+ 
+    
+    <div class="end" id="slide"> 
+    	<h1><u>  CONGRATS </u></h1>
+        <h2> You made it through the tutorial!! Here is a certificate for you! </h2>
+        <br><br>
+        <img src="images/certificate.png" style="width: 90%"> 
+    </div><!--end of step5-->
+    
+   
+    
+    <!--<span class="track">Dr. Who</span class="track">-->
+	<audio loop id="lonely">
+		<source type="audio/mp3" src="Akon-Lonely.mp3">
+	</audio><!--end of Akon-Lonely audio-->
+    <audio loop id="friendsAudio">
+		<source type="audio/mp3" src="friendsThemeSong.mp3">
+	</audio><!--end of friendstheme song audio --> 
+    <audio id="slide1">
+		<source type="audio/mp3" src="audio/slide1.mp3">
+	</audio><!--end of click yes or no[slide1]-->
+    <audio id="slide3">
+		<source type="audio/mp3" src="audio/slide3.mp3">
+	</audio><!--end of slide 3 -confidence-->
+    
+     <audio id="smells">
+		<source type="audio/mp3" src="audio/slide4_Smells.mp3">
+	</audio><!--end of smells -->
+     <audio id="seek">
+		<source type="audio/mp3" src="audio/Slide3_Seek.mp3">
+	</audio><!--end of seek -->
+     <audio id="topics">
+		<source type="audio/mp3" src="audio/Slide4_topics.mp3">
+	</audio><!--end of topics  -->
+    <audio id="justdoit">
+		<source type="audio/mp3" src="audio/Slide5_doit.mp3">
+	</audio><!--end of topics  -->
+    <audio id="congrats">
+		<source type="audio/mp3" src="audio/congrats.mp3">
+	</audio><!--end of congrats  -->
+    <audio controls id="fightsong">
+		<source type="audio/mp3" src="audio/FightSong.mp3">
+	</audio><!--end of fightsong  -->
+<br>
+ 	
+	<div class="deoderant"> 
+    	<img src="images/deoderant.jpg" alt="deoderant">
+    </div>
+    <div class="gum"> 
+    	<img src="images/gum.jpg" alt="gum">
+    </div>
+    
+    
+    
+    
+</div><!--end of content-->
+<footer> 
+    © Jean Tu Fall 2015 
+</footer>
+</div><!--end of outercontainer-->
+</center>
+</body>
+</html>

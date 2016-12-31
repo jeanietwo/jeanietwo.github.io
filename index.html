@@ -9,11 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Blog - Business Casual - Start Bootstrap Theme</title>
-
+    <title>Jean Tu</title> <!---This is just the information that shows up in the Tab name-->
+    <link rel="icon" href="img/initials.png"> <!--adding the icon-->
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/business-casual.css" rel="stylesheet">
 
@@ -32,14 +31,132 @@
 
 <body>
 
-    <div class="Name">Jean Tu</div><br><br>
-    <div class="body"> This website is currently under maintenance, thank you for your patience </div>
+    <div class="brand">Jean Tu</div>
+    <div class="address-bar"><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:jeantu@usc.edu"> jeantu@usc.edu </a> |
+      <span class="glyphicon glyphicon-earphone"></span> 408.628.2439</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Jean Tu</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="JeanTu_Resume.pdf" target="_blank">Resume</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12 text-center">
+                    <div id="carousel-example-generic" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden-xs">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img class="img-responsive img-full" src="img/aoe.jpg" alt="Alpha Omega Epsilon photo: Actives Fall 2016">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/aoe_santamonica.jpg" alt="Alpha Omega Epsilon photo: Santa Monica Spring 2016">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/shpe_kbbq.jpg" alt="SHPE Korean BBQ: Fall 2016">
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+                    </div>
+                    <h2 class="brand-before">
+                        <small>Welcome to</small>
+                    </h2>
+                    <h1 class="brand-name">Jean's Website</h1>
+                    <hr class="tagline-divider">
+                    <h2>
+                        <small>By
+                            <strong>Jean Tu</strong>
+                        </small>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Thank you for visiting my website! </h2>
+                    <hr>
+                    <!--<img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">-->
+                    <hr class="visible-xs">
+                    <p>I have built this website to show case some of the works that I have done in my <a href="http://itp.usc.edu/" target="_blank">Information Technology Program (ITP) </a> courses when I was previously a Web Applications Development Minor.</p>
+                    <p>Since then, I have changed my minor to Applied Computer Security because after working for USC ITS I have seen the different threats there are and it is an active field in the business and technology world that we all live in today. </p>
+                    <p>However, I also wanted a place where I would be able to showcase other things about me without being confined by other people's restrictions. Such as only 1 page for resumes and only being able to add things in a certain format on LinkedIn. </p>
+                    <p>So I wanted to create something with a little more freedom to express myself while still being able to get the same point across. I hope you enjoy! </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">My Random thoughts on
+                        <strong><a href="https://www.jeanietwo.wordpress.com" target="_blank"> my wordpress blog</a></strong>
+                    </h2>
+                    <hr>
+                    <p>Generally, people have a blog section on their website, but I had started a<a href="https://www.jeanietwo.wordpress.com" target="_blank"> Wordpress</a> blog before I had decided to create my own website. </p>
+                    <p>There are also quite a few posts on there and I believe that it is easier to manage than making each individual post on my own website and having to host it on my own device.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
 
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Jean Tu 2016</p>
+                    <p>Copyright &copy; Jean Tu 2016 </p>
                 </div>
             </div>
         </div>
@@ -49,7 +166,14 @@
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
 
 </body>
 

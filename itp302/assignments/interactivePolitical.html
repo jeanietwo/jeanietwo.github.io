@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Interactive Politcal</title>
+</head>
+<script>
+    /*
+    </body>
+    </html>
+    */
+</script>
+<style> 
+#outercontainer {
+	width: 1000px; 
+	margin-left: 20px; 
+	margin-right: 20px; 	
+}
+header{
+	
+}
+#FactCheck {
+	width: 250px; 
+	margin: 0px; 
+	background-color: red; 
+	color: white;  
+	padding: 10px; 
+	position: fixed; 
+}
+#text{
+	margin-left: 300px;  
+}
+#bigImage img{
+	width: 400px; 
+	height: 300px; 
+}
+#Photos {
+		
+}
+.opacity {
+	opacity: 0.5; 	
+}
+.fullOpacity{
+	opacity: 1; 	
+}
+</style> 
+<script src='http://webdev.usc.edu/jqm.js'></script>
+<script>
+$(document).ready(function(){
+	$(".check").hide();
+	$(".photo").addClass("opacity");
+	$("span.bush").on("mouseover",function(){
+		$("#thumbnails .bush").addClass("fullOpacity");
+	});
+		$("span.bush").on("mouseout",function(){
+		$("#thumbnails .bush").removeClass("fullOpacity");
+	});
+	$("span.trump").on("mouseover",function(){
+		$("#thumbnails .bush").addClass("fullOpacity");
+	});
+	$("span.trump").on("mouseout",function(){
+		$("#thumbnails .trump").removeClass("fullOpacity");
+	});
+	$("span.fiorina").on("mouseover",function(){
+		$("#thumbnails .fiorina").addClass("fullOpacity");
+	});
+	$("span.fiorina").on("mouseout",function(){
+		$("#thumbnails .fiorina").removeClass("fullOpacity");
+	});
+	$("span.cruz").on("mouseover",function(){
+		$("#thumbnails .cruz").addClass("fullOpacity");
+	});
+	$("span.cruz").on("mouseout",function(){
+		$("#thumbnails .cruz").removeClass("fullOpacity");
+	});
+	$("span.jindal").on("mouseover",function(){
+		$("#thumbnails .jindal").addClass("fullOpacity");
+	});
+	$("span.jindal").on("mouseout",function(){
+		$("#thumbnails .jindal").removeClass("fullOpacity");
+	});
+	$("span.paul").on("mouseover",function(){
+		$("#thumbnails .paul").addClass("fullOpacity");
+	});
+	$("span.paul").on("mouseout",function(){
+		$("#thumbnails .paul").removeClass("fullOpacity");
+	});
+	$("span.kasich").on("mouseover",function(){
+		$("#thumbnails .kasich").addClass("fullOpacity");
+	});
+	$("span.kasich").on("mouseout",function(){
+		$("#thumbnails .kasich").removeClass("fullOpacity");
+	});
+	$("span.carson").on("mouseover",function(){
+		$("#thumbnails .carson").addClass("fullOpacity");
+	});
+	$("span.carson").on("mouseout",function(){
+		$("#thumbnails .carson").removeClass("fullOpacity");
+	});
+	$("span.rubio").on("mouseover",function(){
+		$("#thumbnails .rubio").addClass("fullOpacity");
+	});
+	$("span.rubio").on("mouseout",function(){
+		$("#thumbnails .rubio").removeClass("fullOpacity");
+	});
+	$("p.immigrants").on("mouseover",function(){
+		$("li.immigrants").show();
+	});
+	$("p.immigrants").on("mouseout",function(){
+		$("li.immigrants").hide();
+	});
+	$("p.tax").on("mouseover",function(){
+		$("li.tax").show();
+	});
+	$("p.tax").on("mouseout",function(){
+		$("li.tax").hide();
+	});
+	$("p.power").on("mouseover",function(){
+		$("li.power").fadeIn();
+	});
+	$("p.power").on("mouseout",function(){
+		$("li.power").fadeOut();
+	});
+	$("p.credit").on("mouseover",function(){
+		$("li.credit").fadeIn();
+	});
+	$("p.credit").on("mouseout",function(){
+		$("li.credit").fadeOut();
+	});
+		$("p.credit").on("mouseover",function(){
+		$("li.recession").slideDown();
+	});
+	$("p.recession").on("mouseout",function(){
+		$("li.recession").slideUp();
+	});
+	//$(".info").hide(); 
+	$(".item").show(); 
+	$(".item").on("mouseover", function() {
+		$(this).next(".info").slideDown(2000);
+		$("#ifra").attr("height","600");
+		newsrc = $(this).attr("href");
+		$("#ifra").attr("src", newsrc);
+	 });
+
+	
+	
+});
+</script>
+<div id="outercontainer">
+<img src="../images/political/washington_header.png" alt="washington post header" width="100%"> 
+<header> 
+	<h1> Reports on the Republicans</h1>
+</header> 
+<div id="FactCheck"> 
+	<h3> FACTCHECK Corner </h3>
+	Republican presidential candidates debated once again on economic issues and offered some misleading takes on jobs, tax plans, immigrants and state budgets.
+	<ul> 
+    <li class="check  money" id="rubioCheck">Florida Sen. <strong>Marco <span class="rubio"> Rubio </span> </strong>said that “welders make more money than philosophers.” Actually, those with undergraduate degrees in philosophy earn a higher median income than welders.
+    </li>
+    &nbsp;
+    <li class="check immigrants" id="trumpCheck">Businessman <strong>Donald <span class="trump"> Trump </span> </strong> said that President Dwight D. Eisenhower had forced out 1.5 million immigrants who were in the country illegally. The federal government claimed it was 1.3 million, but historians say that’s exaggerated.
+    </li>
+    &nbsp;
+    <li class="check tax" id="cruzCheck">Texas Sen.<strong> Ted <span class="cruz"> Cruz </span> </strong>said the Tax Foundation calculated that his tax plan “costs less than virtually every other plan people have put up here, and yet it produces more growth.” But the foundation said Bobby <span class="jindal"> Jindal </span>’s and <span class="rubio"> Rubio </span>’s plans both would lead to higher gross domestic product growth over a decade.
+    </li>
+    &nbsp;
+    <li class="check power" id="cruzCheck2"><span class="cruz"> Cruz </span> also repeated the years-long falsehood that there’s a “congressional exemption” from Obamacare. Members of Congress and their staffs face additional requirements than other Americans, not fewer.
+    </li>
+    &nbsp;
+	<li class="check credit" id="jindalCheck"> Louisiana Gov.<strong> Bobby <span class="jindal"> Jindal </span></strong> said that his state has had “eight credit upgrades,” but two credit rating agencies moved the state to a “negative” outlook in February. And it faces a $117 million deficit in its most recent budget.
+    </li>
+    &nbsp;
+    <li class="check recession" id="huckCheck"> Former Arkansas Gov. <strong>Mike <span class="huckabee"> Huckabee </span> </strong> said he had cut his state budget by 11 percent during the 2001-2003 recession. Over his entire tenure, however, spending went up by 50 percent.
+    </li>
+    &nbsp;
+	<li class="check credit" id="jindalCheck2"> <span class="jindal"> Jindal </span> claimed that there were “more people working in Louisiana than ever before.” That’s wrong. There were fewer Louisianans working in September than there were in December 2014.
+    </li>
+    &nbsp;
+    <li class="check" id="huckCheck2"><span class="huckabee"> Huckabee </span> said that Syrians make up only 20 percent of the refugees arriving in Europe. The figure is actually 52 percent for 2015.
+    </li>
+    &nbsp;
+</ul>
+</div><!--end of FactCheck-->
+
+<div id="text">      
+<div id="robert"> 
+	<h2> Robert Costa's Perspective </h2>
+	<p id="bush" class="money"> 
+    
+    	<span class="bush immigrants">Bush</span> needed a big night to reassure skeptics and kick-start his comeback. While he didn’t have a signature moment Tuesday in a debate that generally lacked fire and star turns, he was feistier than usual, issuing a wake-up call to traditional Republicans about the party’s drift toward outsiders and showing his policy chops on federal regulations. He called out Donald <span class="trump"> Trump </span> for having a worldview fit for a “board game” and warned his party not to lurch to the right on immigration. What he avoided was also telling: jabs at Marco <span class="rubio"> Rubio </span>. He remains a seasoned voice for pragmatism and foreign-policy hawks, and he appears in recovery if not resurgent. This is in relation to immigrants.
+    </p><!--end of bush--> 
+    
+    <p id="carson"> 
+    	Ben <span class="carson"> Carson </span> does not care for debates. He has said this repeatedly, as have his advisers. The high-wattage forums don’t fit his soft-spoken style, and his campaign doesn’t need them to get attention from grass-roots activists. Both points held true on Tuesday. What mattered was how he shrugged off mounting questions about his biography, a move that may steady his candidacy, at least in the eyes of supporters. When he swatted the press, he drew appreciative cheers and was encouraged by conservatives on Twitter. Less effective were his muddled answers on foreign policy and on a minimum wage hike, which he once said he could “possibly” back but now opposes.
+    </p><!--end carson--> 
+    <p id="cruz power money"> 
+   	<span class="cruz"> Cruz </span> is quickly earning a reputation as a sensei of these primary debates, and deservedly so. Even when he’s not the clear star of the night — and he rarely is — he comes fully prepared to make his case to conservatives, armed with cutting answers on everything from sugar subsidies to immigration, where he is aligned with Republicans who are suspicious of the push for reform from the GOP donor class. Most key lines, including the one about the Bible, have been crafted for Iowa, where his campaign sees an opportunity for a bounce next year. He soldiers on, improving with time and exposure in the same manner as <span class="rubio"> Rubio </span> — but from the hard-line wing. A clash between the two senators may loom, should their current trajectories continue.
+    </p><!--end of cruz--> 
+    <p id="fiorina"> 
+    The defining line from Carly <span class="fiorina"> Fiorina </span>’s night didn’t come from <span class="fiorina"> Fiorina </span> but from Donald <span class="trump"> Trump </span>, who complained that she kept “interrupting everybody.” It was a political gift. The crowd rallied to her side, a reminder that in a field stocked with men, she is a formidable presence who occasionally gets under her rivals’ skin. While <span class="fiorina"> Fiorina </span> didn’t burst out of Milwaukee with the kind of momentum she had after the September debate, she did leave stronger, punching up and delivering a harsh critique of her favorite foil, Hillary Rodham Clinton. Her mention of her battle with cancer continued an ongoing introduction for voters still learning about her. While she’s hardly surging, she remains an option for both establishment and grass-roots Republicans.
+    </p><!--fiorina--> 
+    
+    <p id="Kasich">
+    If <span class="bush"> Bush </span> played the role of edgy moderate, <span class="kasich"> Kasich </span> played the role of edgy moderate after downing a Red Bull. Both came unhappy with the party’s embrace of <span class="trump"> Trump </span> and <span class="carson"> Carson </span> and hoped to convince voters to move back toward the middle. Both cast themselves as governors with proven records who oppose mass deportation. <span class="kasich"> Kasich </span> did so as a fast-talking, exasperated truth-teller. “Come on, folks,” he said, shaking his head. It was a direct play for those New Hampshire voters who admire flinty, combative centrists. But boos were heard as <span class="kasich"> Kasich </span> stumbled through a discussion of bank bailouts — a reminder that his work for Lehman Brothers remains a liability.
+    </p><!--Kasich--> 
+    <p id="paul" class="power"> 
+    	The latest whisper in Washington is that <span class="paul"> Paul </span>’s presidential campaign is nearing its end and he may soon return to Kentucky to focus on his reelection to the Senate. But if Tuesday was any indication, <span class="paul"> Paul </span> isn’t going anywhere. He sent a libertarian message to longtime supporters of his father, former congressman from Texas Ron <span class="paul"> Paul </span>, that when it comes to curbing the power of the Federal Reserve and confronting Republican hawks, he is their spokesman. He was also upbeat and noticeably less crabby than he has been at previous debates, another sign that he’s not retreating from a contest he has bemoaned as a circus. He’ll now get another look from his dad’s backers who had fallen away, which is necessary for a shot at success in New Hampshire. 
+    </p><!--paul-->
+    
+    <p id="rubio" class="money"> 
+    If there were an award for blending your stump speech into debate answers, it would regularly be given to <span class="rubio"> Rubio </span>, who continues to stay on message and polished as he climbs in national polls. On Tuesday, he also made passionate overtures to blocs he hopes to bring more fully into his coalition. His rumble with <span class="paul"> Paul </span> on military spending warmed the hearts of defense hawks. His “welders” line was a bid for the support of conservatives frustrated by the political class. To those concerned about his youth and inexperience, he delivered takes on foreign policy with presidential self-assurance. It was the performance of a natural who sees a path to the nomination slowly opening up, as long as he can stay in his lane.
+    </p><!--rubio--> 
+    <p id="trump" class="immigrates"> 
+The billionaire front-runner was comfortable from the start, laying out his platform in broad strokes and mostly steering clear of the heated clashes that once defined his candidacy. On trade, he spoke directly to working-class Republicans wary of the Trans-Pacific Partnership and Chinese currency manipulation. On foreign policy, his non-interventionist instincts flared. He returned to his core themes: an aggressive approach to illegal immigration and a promise to restore the spirit of a country that “does not win anymore.” There were scattered tiffs, such as his exchanges with <span class="kasich"> Kasich </span> and <span class="fiorina"> Fiorina </span>, but <span class="trump"> Trump </span> seemed more irritated than animated by them.
+	</p><!--trump--> 
+</div><!--end of robert--> 
+<div id="Photos"> 
+	<center>
+    <p> Presentation </p>
+	<div id="bigImage"> 
+    	<img src="../images/political/pledge_3.jpg" > 
+        <figcaption> Bush, Carson, and Christie pledging </figcaption>
+        &nbsp;
+    </div><!--end of bigImage--> 
+    </center>
+	 <div id="thumbnails">
+     <img src="../images/political/3_talking.jpg" alt="3 talking during debate" width="90" height="70" border="2" class="photo trump bush walker" 
+     	caption="Trump, Bush, and Walker"> 
+     <img src="../images/political/4_candidates.jpg" alt="4 talking in debate" width="90" height="70" border="2" class="photo pataki santorum jindal graham" 
+     	caption="Pataki, Santorum,Jindal,Graham at the debate"> 
+     <img src="../images/political/candidates.jpg" alt="All of the republicans running for office" width="90" height="70" border="2" class="photo trump carson graham bush walker christie santorum pataki fiorina huckabee"
+     	caption="All of the candidates are pictured">
+     <img src="../images/political/comic.jpg" alt="comic with Trump as the giant elephant in the room" width="90" height="70" border="2" class="photo trump"
+     	caption="Trump being depected as the elephant in the room" > 
+     <img src="../images/political/debate.jpg" alt="end of debate" width="90" height="70" border="2" class="photo bush santorum fiorina pataki"
+     	caption="Interactive talk"> 
+     <img src="../images/political/in-out.jpg" alt="listing those who are in and who might quit" width="90" height="70" border="2" class="photo trump carson graham bush walker christie santorum pataki fiorina huckabee"
+     	caption="Who is in and who might be out">
+  	<img src="../images/political/pledge_3.jpg" alt="3 prez pledge" width="90" height="70" border="2" class="photo bush carson christie"
+    	caption="Main image">
+    <img src="../images/political/republican-debate.jpg" alt="debate" width="90" height="70" border="2" class="photo carson walker huckabee trump bush"
+    	caption="Debaters behind their podeum"> 
+    <img src="../images/political/republicans.png" alt="3 prez pledge" width="90" height="70" border="2" class="photo trump carson graham bush walker christie santorum pataki fiorina huckabee"
+    	caption="Most of the Republicans are pictured">
+    <img src="../images/political/stats.png" alt="stats on the poll" width="90" height="70" border="2" class="photo trump bush walker carson huckabee cruz rubio paul kasich chrisite"
+    	caption="How they all stand up against each other"> 
+    <img src="../images/political/trump_bush.jpg" alt="bush and trump arguing" width="90" height="70" border="2" class="photo trump bush"
+    	caption="Trump arguing with Bush ">
+
+</div><!--end of Photos--> 
+
+<div id="david"> 
+	<h2> David Weigel's Perspective </h2>
+	<p id="bush" class="immigrants power"> 
+    <span class="bush"> Bush </span> entered the campaign in a no-win situation. Had he been given a chance to attack <span class="rubio"> Rubio </span> again, he might have tried and been rolled — or ducked it and been branded a wimp. Lucky for him, the chance never came; instead, he reminded the base of its problems with him on immigration while letting <span class="rubio"> Rubio </span> off the hook. <span class="bush"> Bush </span>’s insistence that talk of immigration restriction weakened the party was at odds with what the base believes, a point exploited moments later by Ted <span class="cruz"> Cruz </span>. <span class="bush"> Bush </span> was left arguing that he alone had the experience to undo onerous regulations. “Jeb can fix it” messaging aside, it’s a tough and unexciting sell.
+    </p> <!--end of bush-->
+
+	<p id="carson"> 
+    	It would be generous to say that <span class="carson"> Carson </span> muddled through. He offered specific-sounding policies that he had not litigated previously and that he seemed uninterested in defending after the debate, from his new minimum-wage skepticism to his theory that corporations use “very low interest rates to buy back their stock and to drive the price of that up artificially.” The <span class="carson"> Carson </span> phenomenon has grown out of conservative respect for his intelligence and his honesty, both of which the media now challenge openly. It’s good for <span class="carson"> Carson </span> that he’ll get to face those challenges in individual interviews, where conservatives take his side, rather than another looming debate where he contrasts poorly.
+    </p><!--carson-->
+    
+    <p id="cruz"> 
+    Nobody benefited more from Fox Business Network’s light touch than <span class="cruz"> Cruz </span>, whose sweeping statements about the economy sometimes failed a reality test while passing an ideological one. (It was remarkable that a business network did not nudge him on support for a new gold standard.) The irony was that friendly, possibly cowed moderators robbed <span class="cruz"> Cruz </span> of his softest targets. That’s not a problem for the rest of his campaign — skeptical reporters are everywhere he goes — but at times, his big ideas were as loose as <span class="carson"> Carson </span>’s. <span class="cruz"> Cruz </span>’s goal, as it has been, is to remain the candidate that <span class="carson"> Carson </span>/<span class="trump"> Trump </span> voters would rather see debate Hillary Rodham Clinton, and he didn’t get much closer to that goal with anything he said on Tuesday. 
+    </p><!--cruz--> 
+    <p id="fiorina"> 
+    <span class="fiorina tax"> Fiorina </span> approached both the truth and the buzzer like a tank approaches a field of daisies. No candidate is as good at riding the crowd to get to her preferred talking points – not even <span class="rubio"> Rubio </span>. But <span class="fiorina"> Fiorina </span>’s gains have faded while media scrutiny has stayed at front-runner levels. During the debate, and in the spin room, she found herself challenged on ideas like a three-page tax code and her 2001 meeting with Vladimir Putin — the one she told Jimmy Fallon had occurred in a “green room setting,” before telling the debate audience she did not merely meet Putin in a green room. One challenge for <span class="fiorina"> Fiorina </span>: the rise of <span class="rubio"> Rubio </span> as an equally eloquent force, with harder-to-peg dissembling.
+    </p><!--fiorina--> 
+    <p id="Kasich" class="recession"> 
+    	No candidate confounded his rivals – on purpose – the way <span class="kasich"> Kasich </span> did. (<span class="carson"> Carson </span> just confused them by habit.) Since 2008, when election losses made the Republican Party effectively irrelevant in the aftermath of the financial crisis, its candidates have opposed bank bailouts. <span class="kasich"> Kasich </span> may have been the first Republican to demand a chance to defend bailouts. He did it on the terms that the GOP’s Chamber of Commerce wing agrees with, and he did it by criticizing the candidate whom those interests like the least: Ted <span class="cruz"> Cruz </span>. <span class="kasich"> Kasich </span>’s campaign is convinced that <span class="bush"> Bush </span> can only continue to decline and that he can run the “moderate” lane in New Hampshire.
+    </p><!--Kasich-->
+    <p id="paul" class="credit"> 
+    Like Bill Murray’s reporter in the movie “Groundhog Day,” stuck in an infinite chronological loop, <span class="paul"> Paul </span> has re-lived a similar debate four times. He has entered each one promising to differentiate his libertarian views. He has done so, and he has not budged in the polls. His clash with <span class="rubio"> Rubio </span> on Tuesday, the highlight of the debate for him, mirrored an exchange with Chris Christie three debates earlier — when neither man benefited. But the compliance of debate moderators let <span class="paul"> Paul </span> coherently describe his tight budgets with little follow-up about detail. <span class="paul"> Paul </span>’s challenge remains deceptively simple: Convincing the party’s libertarian wing to keep him relevant in New Hampshire. He got closer, but he thought he’d done the same in August, September and October.
+    </p><!--paul--> 
+    <p id="rubio" class="recession"> 
+    The senator from Florida’s team was astonished at how well Tuesday night went. Expectations were high, and several candidates were at risk of being made irrelevant, so <span class="rubio"> Rubio </span> was girded for attacks that never came. <span class="trump"> Trump </span> never swung at <span class="rubio"> Rubio </span> on “amnesty.” <span class="bush"> Bush </span>, who had no obvious avenue of attack, did not dare take a swing of his own. Strikingly, nothing <span class="rubio"> Rubio </span> said was new — I heard him use many of these lines verbatim at a Monday campaign stop — but everything landed, including the foreign policy lines that benefited both him and <span class="paul"> Paul </span>. With one month to go until the next debate, I’d look for <span class="rubio"> Rubio </span> and his allies to box out <span class="bush"> Bush </span>, and perhaps focus on painting a contrast with Clinton.
+    </p><!--rubio--> 
+    <p id="trump" class="immigrants"> 
+    <span class="trump"> Trump </span>’s gravity-defying method of debate was on display again Tuesday, complete with dropped or swapped words that made accidental points for him. (That started with him saying “wages too high” when he meant to discuss the minimum wage, in particular.) But his slow, strange evolution into a normal candidate continued, in ways that did not always help. He missed yet another opportunity to attack <span class="rubio"> Rubio </span>’s immigration record. And most remarkably, he declined to swing at <span class="paul"> Paul </span> after the senator pointed out (correctly) that China was not a party to the TPP. Crowds have not stopped filling stadiums to see him, but he’s adapting slowly to the new race.
+    </p> <!--trump--> 
+</div><!--end of david--> 
+<div id="presentation"> 
+    <br /><em>Presentation:</em>
+    <hr />
+    	<div style="margin:auto; width: 820px">
+            <center><iframe src="" name="ifra" id="ifra" scrolling="auto" width="500" height="500"></iframe></center>
+		</div>
+	</div>
+
+	<a href="https://www.donaldjtrump.com/"><div class="item" href="https://www.donaldjtrump.com/">Trump's Website</div></a>
+
+	<div class="info">
+    <p><strong>Donald Trump's Campaign Website</strong><br />
+    Thousands packed the Ford Arena in Beaumont Saturday, to hear Republican Presidential Hopeful Donald Trump speak. He put immigration and closing the country’s borders at the top of his agenda, and coming a day after Paris’ deadly terrorist attacks it’s a message the crowd wanted to hear.
+	</p>
+
+<a href="http://www.paul.senate.gov/"><div class="item" href="http://www.paul.senate.gov/">Paul's Website</div></a>
+	<div class="info">
+    <p><strong>Rand Paul's Campaign Website</strong><br />
+   U.S. Senator Rand Paul, M.D., is one of the nation’s leading advocates for liberty. Elected to the United States Senate in 2010, Dr. Paul has proven to be an outspoken champion for constitutional liberties and fiscal responsibility. As a fierce advocate against government overreach, Dr. Paul has fought tirelessly to return government to its limited, constitutional scope.
+	</p>
+    
+    <a href="https://www.bencarson.com/"><div class="item" href="https://www.bencarson.com/">Carson's Website</div></a>
+	<div class="info">
+    <p><strong>Ben Carson's Campaign Website</strong><br />
+    But growing up poor in a single-parent household in Detroit with bad grades and a horrible temper, the statistics were certainly not in his favor.
+
+Fortunately, Ben’s mother, having only completed third grade herself, challenged her two children to reach beyond their meager circumstances through reading and building their knowledge of the world.
+	</p>
+    
+     <a href="https://carlyforpresident.com/"><div class="item" href="https://carlyforpresident.com/">Fiorina's Website</div></a>
+	<div class="info">
+    <p><strong>Carly Fiorina's Campaign Website</strong><br />
+    But growing up poor in a single-parent household in Detroit with bad grades and a horrible temper, the statistics were certainly not in his favor.
+
+Fortunately, Ben’s mother, having only completed third grade herself, challenged her two children to reach beyond their meager circumstances through reading and building their knowledge of the world.
+	</p>
+    
+     <a href="https://johnkasich.com/"><div class="item" href="https://johnkasich.com/">Kasich's Website</div></a>
+	<div class="info">
+    <p><strong>John Kasich's Campaign Website</strong><br />
+    Husband, father, friend, person of faith, leader, change agent…John Kasich is a lot of things and through it all runs his honest, direct, authentic, tenacious approach to life that has allowed him, time and again, to do what they said couldn’t be done and, as his mom told him as a boy, “make things a little better because you were there.
+	</p>
+
+</div><!--end of presentation--> 
+	<p> Information is from <a href=	"https://www.washingtonpost.com/graphics/politics/2016-election/debates/nov-10-debate/" target="_blank">This website</a></p>
+
+</div><!--end of text--> 
+</div><!--end of outercontainter--> 
+</html>

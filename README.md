@@ -2,7 +2,7 @@
 
 This is my website that has been revamped using a Bootstrap template, the information for the Copyright and License are listed below this document. 
 
-##About 
+## About 
 This is pretty much an explanatory page where you get to know me a little better. 
 
 ## Index.html 
@@ -11,7 +11,7 @@ This is the website that stores my homepage.
 ## Blog 
 This is more so just a link to the different social media feeds that I have. I do have a [Wordpress](https://jeanietwo.wordpress.com/) website that I use as a blog because I'd rather have my posts go through there where they can be tracked and stored on the cloud rather than having them all on my personal device to be pushed to the GitHub servers. 
 
-##Contact 
+## Contact 
 This page is also pretty explanatory where it is where one would go if they wanted to contact me!! 
 
 ## Copyright and License
